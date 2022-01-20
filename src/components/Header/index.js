@@ -1,5 +1,6 @@
-import { HeaderArea, NavBar, LogoArea, MenuArea, Menu } from "./styled";
+import { HeaderArea, NavBar, LogoArea, MenuArea, Menu, MenuMobile } from "./styled";
 import { Link } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header(){
     return(
@@ -19,8 +20,13 @@ export default function Header(){
                         <li>Contato</li>
                         <li>Login</li>
                     </Menu>
+
+                    <MenuMobile>
+                        <MenuIcon/>
+                    </MenuMobile>
                 </MenuArea>
             </NavBar>
+
         </HeaderArea>
     );
 }

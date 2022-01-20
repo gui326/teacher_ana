@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const HeaderArea = styled.header`
-
+    width: 100%;
 `;
 
 export const NavBar = styled.div`
+    box-sizing: border-box;
     width: 100%;
     position: relative;
     top: 0;
@@ -15,6 +16,10 @@ export const NavBar = styled.div`
     max-width: 1240px;
     margin: auto;
     padding: 1.5rem 0;
+
+    @media (max-width: 468px){
+        padding: 1.5rem 1rem;
+    }
 `;
 
 export const LogoArea = styled.div` 
@@ -38,5 +43,22 @@ export const Menu = styled.ul`
         margin: 0 1em;
         font-weight: 500;
         color: #1D2B4B;
+    }
+
+    @media (max-width: 468px){
+        display: none;
+    }
+`;
+
+export const MenuMobile = styled.div`
+    display: none;
+    margin-left: auto;
+    align-self: center;
+    svg{
+        font-size: 2em;
+    }
+
+    @media (max-width: 468px){
+        display: block;
     }
 `;

@@ -12,12 +12,28 @@ export const Section = styled.section`
         left: 0;
         filter: opacity(0.8);
     }
+
+    @media (max-width: 468px){
+        padding: 0 1.2em;
+
+        img{
+            max-width: 310px;
+            z-index: 0;
+            bottom: 9.7em;
+            left: 11em;
+            filter: opacity(0.4);
+        }
+    }
 `;
 
 export const ContentArea = styled.div` 
     padding-top: 4em;
     display: flex;
     flex-wrap: wrap;
+
+    @media (max-width: 468px){
+        padding-top: 2em;
+    }
 `;
 
 export const LeftSide = styled.div`
@@ -34,13 +50,29 @@ export const LeftSide = styled.div`
         max-width: 80%;
         color: #2c2c2c;
         font-size: 1.1rem;
-        line-height: 1.9rem;
+        line-height: 1.7rem;
         font-weight: 500;
+    }
+
+    @media (max-width: 468px){
+        width: 100%;
+        padding-top: 0;
+
+        p{
+            z-index: 1;
+            position: relative;
+            text-align: justify;
+        }
     }
 `;
 
 export const RightSide = styled.div`
     width: 50%;
+
+    @media (max-width: 468px){
+        width: 100%;
+        padding: 3em 1em;
+    }
 `;
 
 export const Card = styled.div`
@@ -58,8 +90,12 @@ export const Card = styled.div`
         color: #1d2b4b;
     }
 
-    p{
-
+    @media (max-width: 468px){
+        max-width: 100%;
+        text-align: center;
+        p{
+            text-align: justify;
+        }
     }
 `;
 
@@ -76,5 +112,10 @@ export const CardButton = styled.button`
     :hover{
         background: white;
         color: #1D2B4B;
+    }
+
+    @media (max-width: 468px){
+        width: 100%;
+        padding: .9em 0;
     }
 `;
