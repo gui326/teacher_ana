@@ -10,7 +10,6 @@ export const Section = styled.section`
         position: absolute;
         bottom: 0;
         left: 0;
-        filter: opacity(0.8);
     }
 
     @media (max-width: 468px){
@@ -48,7 +47,7 @@ export const LeftSide = styled.div`
 
     p{
         max-width: 80%;
-        color: #2c2c2c;
+        color: white;
         font-size: 1.1rem;
         line-height: 1.7rem;
         font-weight: 500;
@@ -88,6 +87,11 @@ export const Card = styled.div`
     h1{
         margin: 0;
         color: #1d2b4b;
+    }
+
+    p{
+        line-height: 1.5rem;
+        color: #2c2c2c;
     }
 
     @media (max-width: 468px){

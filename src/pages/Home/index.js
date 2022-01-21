@@ -14,7 +14,7 @@ export default function Home(){
                     </p>
                 </LeftSide>
                 <RightSide>
-                    <Slide direction="right" in={true} mountOnEnter unmountOnExit>
+                    <Slide direction="left" in={true} mountOnEnter unmountOnExit>
                         <Card>
                             <h1>Vem com a gente</h1>
 
@@ -29,9 +29,7 @@ export default function Home(){
                     </Slide>
                 </RightSide>
             </ContentArea>
-            <Slide direction="left" in={true} mountOnEnter unmountOnExit>
-                <img src="backgroundHome.svg"/>
-            </Slide>
+            <img src="backgroundHome.svg"/>
         </Section>
     );
 }
