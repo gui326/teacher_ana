@@ -16,7 +16,9 @@ export default function Header(){
                         <Link to="/">
                             <li>Home</li>
                         </Link>
-                        <li>Login</li>
+                        <Link to="/login">
+                            <li>Login</li>
+                        </Link>
                     </Menu>
 
                     <MenuMobile>
