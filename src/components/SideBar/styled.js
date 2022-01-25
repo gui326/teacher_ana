@@ -8,7 +8,15 @@ export const SideBarArea = styled.aside`
     top: 0;
     bottom: 0;
     background: #EEEEEE;
-    box-sizing: border-box;
+
+    @media (max-width: 468px){
+        right: 0;
+        top: unset;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+        min-width: 100%;
+    }
 `;
 
 export const MenuArea = styled.ul` 
@@ -33,6 +41,17 @@ export const MenuArea = styled.ul`
     a:active{
         outline: 1px solid white;
     }
+
+    @media (max-width: 468px){
+        justify-content: space-around;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: unset;
+
+        a{
+            flex: 1 0 auto;
+        }
+    }
 `;
 
 export const Menu = styled.li` 
@@ -47,5 +66,17 @@ export const Menu = styled.li`
         padding-left: 2em;
         align-self: center;
         display: ${props => props.expansible === false ? 'none' : ''};
+    }
+
+    @media (max-width: 468px){
+        align-items: center;
+        text-align: center;
+        flex-wrap: unset;
+        flex-direction: column;
+
+        p{
+            padding: 0;
+            display: block!important;;
+        }
     }
 `;

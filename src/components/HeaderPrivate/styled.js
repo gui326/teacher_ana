@@ -16,6 +16,10 @@ export const NavBar = styled.div`
     justify-content: space-between;
     padding: .5em 1.5em;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+    @media (max-width: 468px){
+        padding: .5em .8em;
+    }
 `;
 
 export const LogoArea = styled.div` 
@@ -38,6 +42,16 @@ export const LogoArea = styled.div`
     svg:active{
         background: #f1f1f1;
         outline: 4px solid #f1f1f1;
+    }
+
+    @media (max-width: 468px){
+        svg{
+            display: none;
+        }
+
+        img{
+            margin-left: 0;
+        }
     }
 `;
 
