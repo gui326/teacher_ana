@@ -18,6 +18,10 @@ export const CardPrincipais = styled.div`
     border-radius: 9px;
     margin-top: 2em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    :last-child{
+        margin-bottom: 5em;
+    }
 `;
 
 export const Heading = styled.div`
@@ -46,6 +50,7 @@ export const Card = styled.div`
     background: #fbfbfb;
     cursor: pointer;
     transition: all ease .3s;
+    height: 100%;
 
     p{
         margin: 0;

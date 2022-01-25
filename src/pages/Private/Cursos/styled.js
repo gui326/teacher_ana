@@ -29,4 +29,11 @@ export const Card = styled.div`
     :hover{
         margin-top: -.5em;
     }
+
+    @media (max-width: 468px){
+        padding: 2.2em .6em;
+        h5{
+            font-size: 1.5rem;
+        }
+    }
 `;

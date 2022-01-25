@@ -8,12 +8,12 @@ export default function Cursos(){
 
     return(
         <div>
-            <h1>Cursos</h1>
+            <h1>Meus Cursos</h1>
 
             <Grid pt={2} container spacing={4}>
-                <Grid item md={3}>
+                <Grid item md={3} xs={6}>
                     {loading ?
-                        <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" width={250} height={150} />
+                        <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" height={150} />
                     : 
                         <Link to="/curso/matematica">
                             <Card>
@@ -23,14 +23,14 @@ export default function Cursos(){
                         </Link>
                     }
                 </Grid>
-                <Grid item md={3}>
-                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" width={250} height={150} />
+                <Grid item md={3} xs={6}>
+                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" height={150} />
                 </Grid>
-                <Grid item md={3}>
-                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" width={250} height={150} />
+                <Grid item md={3} xs={6}>
+                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" height={150} />
                 </Grid>
-                <Grid item md={3}>
-                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" width={250} height={150} />
+                <Grid item md={3} xs={6}>
+                    <Skeleton animation="wave" sx={{ borderRadius: '7px' }} variant="rectangular" height={150} />
                 </Grid>
             </Grid>
         </div>

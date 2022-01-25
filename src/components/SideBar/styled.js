@@ -8,6 +8,7 @@ export const SideBarArea = styled.aside`
     top: 0;
     bottom: 0;
     background: #EEEEEE;
+    z-index: 300;
 
     @media (max-width: 468px){
         right: 0;
@@ -16,6 +17,7 @@ export const SideBarArea = styled.aside`
         height: auto;
         width: 100%;
         min-width: 100%;
+        background: #EEEEEE;
     }
 `;
 
@@ -73,8 +75,15 @@ export const Menu = styled.li`
         text-align: center;
         flex-wrap: unset;
         flex-direction: column;
+        padding: .5em 1.6em;
+
+        svg{
+            font-size: 2.3rem;
+            color: #2a2a2a;
+        }
 
         p{
+            font-size: .7rem;
             padding: 0;
             display: block!important;;
         }

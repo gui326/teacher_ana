@@ -22,8 +22,8 @@ export default function Curso(){
                     </Button>
                 </Heading>
 
-                <Grid mt={2} container spacing={4}>
-                    <Grid item md={3}>
+                <Grid mt={2} container spacing={2}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -34,7 +34,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -45,7 +45,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -56,7 +56,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -81,8 +81,8 @@ export default function Curso(){
                     </Button>
                 </Heading>
 
-                <Grid mt={2} container spacing={4}>
-                    <Grid item md={3}>
+                <Grid mt={2} container spacing={2}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Aula 2</h6>
@@ -93,7 +93,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -104,7 +104,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -115,7 +115,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -140,8 +140,8 @@ export default function Curso(){
                     </Button>
                 </Heading>
 
-                <Grid mt={2} container spacing={4}>
-                    <Grid item md={3}>
+                <Grid mt={2} container spacing={2}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Artigo</h6>
@@ -152,7 +152,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -163,7 +163,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
@@ -174,7 +174,7 @@ export default function Curso(){
                         </Card>
                     </Grid>
 
-                    <Grid item md={3}>
+                    <Grid item md={3} xs={6}>
                         <Card>
                             <HeadTitle>
                                 <h6>Matemática Básica</h6>
