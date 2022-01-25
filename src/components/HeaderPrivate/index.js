@@ -11,7 +11,7 @@ export default function HeaderPrivate(props){
                 <LogoArea>  
                     <MenuIcon onClick={() => props.handleExpansible('')}/>
                     <Link to="/dashboard">
-                        <img src="logo.png"/>
+                        <img src="/logo.png"/>
                     </Link>
                 </LogoArea>
                 <ContentArea>

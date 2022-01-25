@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import Dashboard from "./pages/Private/Home";
 import Cursos from "./pages/Private/Cursos";
+import Curso from "./pages/Private/Curso";
 import { GlobalStylePublic } from "./globalstyledpublic";
 import { GlobalStylePrivate } from "./globalstyledprivate";
 
@@ -49,6 +50,7 @@ function App() {
                 <Route path="*" element={<Dashboard />}/>
                 <Route exact path="/dashboard" element={<Dashboard />} />
                 <Route exact path="/cursos" element={<Cursos />} />
+                <Route path="curso/:matematica" element={<Curso />} />
             </Routes>
           </Container>
         </>
