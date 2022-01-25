@@ -10,6 +10,8 @@ export const ContentArea = styled.div`
     width: 100%;
     margin: auto;
     display: flex;
+    max-width: 30%;
+    flex-direction: column;
     justify-content: center;
 `;
 
@@ -19,6 +21,7 @@ export const Card = styled.div`
     min-width: 30%!important;
     padding: 2.3em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 1%;
 
     h1{
         margin-top: 0;
@@ -42,6 +45,11 @@ export const Card = styled.div`
         font-weight: 500;
         border: 0;
     }
+`;
+
+export const LinkArea = styled.div` 
+    display: flex;
+    justify-content: space-between;
 
     p{
         margin-top: .3em!important;
@@ -52,5 +60,23 @@ export const Card = styled.div`
 
     p:hover{
         color: #c6c6c6;
+    }
+`;
+
+export const SideCard = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
+
+export const CardApi = styled.div` 
+    border-radius: 9px;
+    background: white;
+    padding: 1.5em 1.3em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    h1{
+        margin: 0;
+        font-size: 1rem;
     }
 `;
