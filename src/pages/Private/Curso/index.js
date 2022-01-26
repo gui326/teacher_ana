@@ -3,6 +3,7 @@ import { Content, CardPrincipais, Heading, Card, HeadTitle, HeadingTitle } from 
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+import { Link } from "react-router-dom";
 
 export default function Curso(){
     return(
@@ -24,14 +25,16 @@ export default function Curso(){
 
                 <Grid mt={2} container spacing={2}>
                     <Grid item md={3} xs={6}>
-                        <Card>
-                            <HeadTitle>
-                                <h6>Matemática Básica</h6>
-                            </HeadTitle>
-                            <p>
-                                Prova de matemática básica, contendo contas de multiplicação e divisão.
-                            </p>
-                        </Card>
+                        <Link to="/curso/matematica/prova?matematicabasica">
+                            <Card>
+                                <HeadTitle>
+                                    <h6>Matemática Básica</h6>
+                                </HeadTitle>
+                                <p>
+                                    Prova de matemática básica, contendo contas de multiplicação e divisão.
+                                </p>
+                            </Card>
+                        </Link>
                     </Grid>
 
                     <Grid item md={3} xs={6}>

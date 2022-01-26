@@ -15,12 +15,15 @@ import Cadastro from "./pages/Cadastro";
 import Dashboard from "./pages/Private/Home";
 import Cursos from "./pages/Private/Cursos";
 import Curso from "./pages/Private/Curso";
+import VerProva from "./pages/Private/VerProva";
+import Prova from "./pages/Private/Prova";
 import { GlobalStylePublic } from "./globalstyledpublic";
 import { GlobalStylePrivate } from "./globalstyledprivate";
 
 
 function App() {
   const [isPrivate, setIsPrivate] = useState(true);
+  const [isFora, setIsFora] = useState(false);
   const [expansible, setExpansible] = useState(true);
 
   const handleExpansible = () => {
@@ -42,17 +45,29 @@ function App() {
         </>
         :
         <>
-          <GlobalStylePrivate/>
-          <HeaderPrivate handleExpansible={handleExpansible} /> 
-          <SideBar expansible={expansible}/>
-          <Container expansible={expansible}>
+        {!isFora ? 
+          <>
+            <GlobalStylePrivate/>
+            <HeaderPrivate handleExpansible={handleExpansible} /> 
+            <SideBar expansible={expansible}/>
+            <Container expansible={expansible}>
+              <Routes>
+                  <Route path="*" element={<Dashboard />}/>
+                  <Route exact path="/dashboard" element={<Dashboard />} />
+                  <Route exact path="/cursos" element={<Cursos />} />
+                  <Route path="curso/:matematica" element={<Curso />} />
+                  <Route path="curso/:matematica/prova" element={<VerProva />} />
+              </Routes>
+            </Container>
+          </>
+        :
+          <>
+            <GlobalStylePrivate/>
             <Routes>
-                <Route path="*" element={<Dashboard />}/>
-                <Route exact path="/dashboard" element={<Dashboard />} />
-                <Route exact path="/cursos" element={<Cursos />} />
-                <Route path="curso/:matematica" element={<Curso />} />
+                <Route exact path="curso/:matematica/realizarprova" element={<Prova />} />
             </Routes>
-          </Container>
+          </>
+        }
         </>
       }
 
