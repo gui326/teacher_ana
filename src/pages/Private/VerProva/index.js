@@ -2,6 +2,7 @@ import { Content, CardPrincipais, Heading, HeadingTitle, Info, Text, FooterArea 
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import { Button, Grid } from "@mui/material";
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
+import { Link } from "react-router-dom";
 
 export default function VerProva(){
     return(
@@ -40,9 +41,11 @@ export default function VerProva(){
                 </Grid>
                 
                 <FooterArea>
-                    <Button variant="contained">
-                        Começar Prova
-                    </Button>
+                    <Link to="/curso/matematica/realizarprova?prova=12932">
+                        <Button variant="contained">
+                            Começar Prova
+                        </Button>
+                    </Link>
                 </FooterArea>
             </CardPrincipais>
         </Content>

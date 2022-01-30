@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 
 import Header from './components/Header';
@@ -22,7 +22,7 @@ import { GlobalStylePrivate } from "./globalstyledprivate";
 
 
 function App() {
-  const [isPrivate, setIsPrivate] = useState(true);
+  const [isPrivate, setIsPrivate] = useState(false);
   const [isFora, setIsFora] = useState(false);
   const [expansible, setExpansible] = useState(true);
 
@@ -30,6 +30,13 @@ function App() {
       console.log('sidebar expansivel', expansible);
       setExpansible(!expansible);
   }
+
+  useEffect(() => {
+    let uri = window.location.pathname;
+    uri.includes('/realizarprova') ? setIsFora(true) : setIsFora(false);
+    console.log(window.location.pathname);
+  }, []);
+
 
   return (
     <BrowserRouter>

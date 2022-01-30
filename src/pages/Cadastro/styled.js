@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 
 export const Section = styled.section` 
     margin: auto;
@@ -38,5 +39,26 @@ export const Card = styled.div`
     button:hover{
         background: rgba(0,0,0, 0.8) ;
         border: 0!important;
+    }
+`;
+
+export const animate = keyframes` 
+    to {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(-360deg);
+    }
+`;
+
+export const Loading = styled.div` 
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg{
+        font-size: 2.3em;
+        animation: ${animate} 1.4s linear infinite;
     }
 `;
